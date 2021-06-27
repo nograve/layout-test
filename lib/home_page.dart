@@ -95,7 +95,18 @@ class HomePage extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
+                            // set up the AlertDialog
+                            const AlertDialog alert = AlertDialog(
+                              title: Text("REPORTING"),
+                            );
 
+                            // show the dialog
+                            showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return alert;
+                              },
+                            );
                           },
                           child: const Icon(
                             Icons.info,
