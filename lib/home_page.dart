@@ -10,72 +10,70 @@ class HomePage extends StatelessWidget {
         children: [
           Container(
             alignment: Alignment.topRight,
-            margin: EdgeInsets.all(20),
+            margin: const EdgeInsets.all(20),
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 10),
                   child: Column(
-                    children: [
-                      FloatingActionButton(
+                    children: const [
+                       FloatingActionButton(
                         backgroundColor: Colors.white,
+                        onPressed: null,
                         child: Icon(
                           Icons.directions_car,
                           color: Colors.green,
                         ),
-                        onPressed: null,
                       ),
                       Text('Car'),
                     ],
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 10),
                   child: Column(
-                    children: [
+                    children: const [
                       FloatingActionButton(
                         backgroundColor: Colors.white,
+                        onPressed: null,
                         child: Icon(
                           Icons.contact_phone_outlined,
                           color: Colors.green,
                         ),
-                        onPressed: null,
                       ),
                       Text('Service'),
                     ],
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(bottom: 10),
+                  margin: const EdgeInsets.only(bottom: 10),
                   child: Column(
-                    children: [
+                    children: const [
                       FloatingActionButton(
                         backgroundColor: Colors.white,
+                        onPressed: null,
                         child: Icon(
                           Icons.construction_outlined,
                           color: Colors.green,
                         ),
-                        onPressed: null,
                       ),
                       Text('Car parts'),
                     ],
                   ),
                 ),
-                Container(
-                  child: Column(
-                    children: [
+                 Column(
+                    children: const [
                       FloatingActionButton(
                         backgroundColor: Colors.white,
+                        onPressed: null,
                         child: Icon(
                           Icons.work_outline,
                           color: Colors.green,
                         ),
-                        onPressed: null,
                       ),
                       Text('Find job'),
                     ],
                   ),
-                ),
               ],
             ),
           ),
