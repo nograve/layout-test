@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
                         onPressed: null,
                         child: Icon(
                           Icons.directions_car,
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         ),
                       ),
                       Text('Car'),
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                         onPressed: null,
                         child: Icon(
                           Icons.contact_phone_outlined,
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         ),
                       ),
                       Text('Service'),
@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                         onPressed: null,
                         child: Icon(
                           Icons.construction_outlined,
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         ),
                       ),
                       Text('Car parts'),
@@ -68,7 +68,7 @@ class HomePage extends StatelessWidget {
                         onPressed: null,
                         child: Icon(
                           Icons.work_outline,
-                          color: Colors.green,
+                          color: Colors.greenAccent,
                         ),
                       ),
                       Text('Find job'),
@@ -77,6 +77,56 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
+          Container(
+            margin: const EdgeInsets.only(top: 200),
+            child: Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                    child: const FloatingActionButton(
+                      onPressed: null,
+                      backgroundColor: Colors.green,
+                      child: Icon(Icons.sticky_note_2),
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(60, 0, 60, 0),
+                    child: Column(
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+
+                          },
+                          child: const Icon(
+                            Icons.info,
+                            color: Colors.greenAccent,
+                            size: 70.0,
+                          ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 5),
+                          child: const Text(
+                            'REPORTING',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: const EdgeInsets.fromLTRB(15, 0, 10, 0),
+                    child: const FloatingActionButton(
+                      onPressed: null,
+                      backgroundColor: Colors.green,
+                      child: Icon(Icons.sticky_note_2),
+                    ),
+                  ),
+                ],
+              ),
+            ),
         ],
       ),
     );
